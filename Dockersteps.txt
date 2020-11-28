@@ -1,0 +1,21 @@
+1) sudo yum update -y
+
+2) sudo amazon-linux-extras install docker
+
+3) sudo service docker start
+
+4) sudo usermod -a -G docker ec2-user
+
+5) docker --version
+
+6) mkdir docker-demo
+
+7) cd docker-demo
+
+8) vi Dockerfile
+
+9) sudo docker build -t hello-world .
+
+10) sudo docker images --filter reference=hello-world
+
+11) sudo docker run -t -i -p 8080:8080 hello-world
